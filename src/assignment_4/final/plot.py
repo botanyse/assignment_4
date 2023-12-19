@@ -12,6 +12,6 @@ pd.options.plotting.backend = "plotly"
 def create_plots(df, x,  y):
     """Create plots of the score for every attribute calculated against the scores in the chs dataset by age group and write them in html files
     """
-    fig = px.scatter(df, x, y, facet_col="age", trendline="ols")
+    fig = px.scatter(df, x=x, y=y, facet_col="age", trendline="ols")
     return go.Figure(fig)
 

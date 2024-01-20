@@ -14,5 +14,5 @@ SCORE_NAMES = {
     "peer": "bpiE",
 }
 
-__all__ = ["BLD", "SRC", "SCORE_NAMES"]
+__all__ = ["BLD", "SRC", "SCORE_NAMES", "TEST_DIR"]
 

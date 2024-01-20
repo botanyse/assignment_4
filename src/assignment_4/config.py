@@ -4,6 +4,8 @@ from pathlib import Path
 SRC = Path(__file__).parent.resolve()
 BLD = SRC.joinpath("..", "..", "bld").resolve()
 
+TEST_DIR = SRC.joinpath("..", "..", "tests").resolve()
+
 SCORE_NAMES = {
     "antisocial": "bpiA",
     "anxiety": "bpiB",
@@ -13,3 +15,4 @@ SCORE_NAMES = {
 }
 
 __all__ = ["BLD", "SRC", "SCORE_NAMES"]
+

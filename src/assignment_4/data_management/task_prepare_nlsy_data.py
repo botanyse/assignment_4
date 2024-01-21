@@ -21,5 +21,5 @@ def task_prepare_nlsy_data(
 ):
     raw = pd.read_stata(depends_on['data'])
     info = pd.read_csv(depends_on['data_info'])
-    cleaned_data = cleaned_nlsy_data = clean_and_reshape_nlsy_data(raw=raw, info=info)
+    cleaned_data = clean_and_reshape_nlsy_data(raw=raw, info=info)
     cleaned_data.to_feather(produces)

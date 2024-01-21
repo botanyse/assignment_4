@@ -9,7 +9,7 @@ pd.options.future.infer_string = False
 pd.options.plotting.backend = "plotly"
 
 from assignment_4.config import BLD, SRC, SCORE_NAMES
-from assignment_4.final.plot import create_plots
+from assignment_4.final.plot import create_plots, plot_monte_carlo
 
 
 dep = {
@@ -30,3 +30,10 @@ for seed, id_ in SCORE_NAMES.items():
         merged_data = pd.read_csv(depends_on["data"])
         fig = create_plots(merged_data, x=seed, y=id_)
         fig.write_image(produces, width=1080, height=720)
+
+def task_plot_monte_carlo_simulation(
+        path_to_data :  Path = BLD / "python" / "models" / "monte_carlo_results.pkl", produces : Path =  BLD / "python" / "figures" / "monte_carlo_bias.png"
+):
+    data = pd.read_pickle(path_to_data)
+    fig = plot_monte_carlo(data)
+    fig.write_image(produces, width=1080, height=720)

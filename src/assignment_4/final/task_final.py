@@ -32,7 +32,8 @@ for seed, id_ in SCORE_NAMES.items():
         fig.write_image(produces, width=1080, height=720)
 
 def task_plot_monte_carlo_simulation(
-        path_to_data :  Path = BLD / "python" / "models" / "monte_carlo_results.pkl", produces : Path =  BLD / "python" / "figures" / "monte_carlo_bias.png"
+        path_to_data :  Path = BLD / "python" / "models" / "monte_carlo_results.pkl", 
+        produces : Path =  BLD / "python" / "figures" / "monte_carlo_bias.png"
 ):
     data = pd.read_pickle(path_to_data)
     fig = plot_monte_carlo(data)

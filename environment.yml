@@ -19,6 +19,7 @@ dependencies:
   - python-graphviz
   - python=3.11
   - pyyaml
+  - scikitlearn
   - setuptools_scm
   - statsmodels
   - toml

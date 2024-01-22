@@ -1,6 +1,5 @@
 # assignment_4
 
-
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/botanyse/assignment_4/main.svg)](https://results.pre-commit.ci/latest/github/botanyse/assignment_4/main)
 [![image](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
